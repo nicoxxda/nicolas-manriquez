@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-top: 0.5em;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultados {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+}

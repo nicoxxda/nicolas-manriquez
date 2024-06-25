@@ -1,0 +1,50 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxPass Gestión de Tarjetas de Pago</title>
+    <link rel="stylesheet" href="trabajo de maxpas.css">
+</head>
+<body>
+    <header>
+        <h1>MaxPass Gestión de Tarjetas de Pago</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cargar Monto a Tarjeta</h2>
+            <form id="cargarMontoForm">
+                <label for="numeroTarjeta">Número de Tarjeta (6 dígitos):</label>
+                <input type="number" id="numeroTarjeta" required minlength="6" maxlength="6">
+                <label for="montoCarga">Monto a Cargar:</label>
+                <input type="number" id="montoCarga" required>
+                <button type="submit">Cargar Monto</button>
+            </form>
+        </section>
+        <section>
+            <h2>Habilitar/Deshabilitar Tarjeta</h2>
+            <form id="cambiarEstadoForm">
+                <label for="numeroTarjetaEstado">Número de Tarjeta (6 dígitos):</label>
+                <input type="number" id="numeroTarjetaEstado" required minlength="6" maxlength="6">
+                <label for="estadoTarjeta">Estado:</label>
+                <select id="estadoTarjeta">
+                    <option value="habilitar">Habilitar</option>
+                    <option value="deshabilitar">Deshabilitar</option>
+                </select>
+                <button type="submit">Cambiar Estado</button>
+            </form>
+        </section>
+        <section>
+            <h2>Consultas</h2>
+            <button onclick="consultarTarjetasHabilitadas()">Consultar Tarjetas Habilitadas</button>
+            <button onclick="consultarTarjetasDeshabilitadas()">Consultar Tarjetas Deshabilitadas</button>
+            <button onclick="consultarPromedioSaldosAnteriores()">Consultar Promedio Saldos Anteriores</button>
+            <button onclick="consultarPromedioCargas()">Consultar Promedio Cargas</button>
+            <button onclick="consultarTotalSaldosAnteriores()">Consultar Total Saldos Anteriores</button>
+            <button onclick="consultarTotalCargasHabilitadas()">Consultar Total Cargas Habilitadas</button>
+            <button onclick="consultarTotalCargasDeshabilitadas()">Consultar Total Cargas Deshabilitadas</button>
+            <div id="resultados"></div>
+        </section>
+    </main>
+    <script src="trabajo de maxpas.js"></script>
+</body>
+</html>
